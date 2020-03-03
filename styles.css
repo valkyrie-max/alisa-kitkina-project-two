@@ -223,7 +223,7 @@ header .circle p {
 
 .branding {
     text-align: center;
-    flex: 1 0 50%;
+    flex: 1 1 50%;
     min-width: 300px;
 }
 
@@ -233,7 +233,7 @@ header .circle p {
 
 .design_and_develop {
     text-align: center;
-    flex: 1 0 50%;
+    flex: 1 1 50%;
     min-width: 300px;
 }
 
@@ -244,7 +244,6 @@ header .circle p {
 /* testimonials styling */
 .testimonials {
     text-align: center;
-
     padding: 150px 0;
 }
 
@@ -284,4 +283,45 @@ header .circle p {
 /* features styling */
 .features {
     background: url("creative_assets/home_4.jpeg") no-repeat fixed;
+    background-size: cover;
+    background-position: 90%;
+    height: 90vh;
+    padding-top: 10%;
+    padding-left: 35%;
+}
+
+.features_items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features_items li {
+    flex: 1 0 50%;
+    display: flex;
+
+    margin-top: 25px;
+}
+
+.features_items .icon {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #333333;
+    text-align: center;
+    line-height: 3;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.icon i {
+    font-size: 1.5rem;
+    vertical-align: middle;
+    color: #333;
+}
+
+.features_text {
+    padding-left: 20px;
+}
+
+.features_text p {
+    padding-top: 5px;
 }
