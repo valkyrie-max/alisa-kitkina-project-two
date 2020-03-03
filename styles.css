@@ -99,38 +99,49 @@ header {
     background-size: cover;
     background-position: 50%;
 
+    position: relative;
     /* size styling */
     height: 100vh;
 
     /* marg/pad styling */
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
-header .wrapper {
+header .flex_items {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
 
-header ul {
+header .logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+header nav ul {
     display: flex;
 }
 
-/* left nav */
-.left_nav_header {
-    margin: 10px 30px 10px 0;
+header nav ul li {
+    display: flex;
 }
-.left_nav_header li {
+
+header .left_nav_header li {
     padding-right: 30px;
 }
 
-/* right nav */
-.right_nav_header {
-    margin: 10px 0 10px 30px;
-}
-
-.right_nav_header li {
+header .right_nav_header li {
     padding-left: 30px;
 }
+
 
 header ul .circle {
     position: relative;
@@ -162,6 +173,21 @@ header .circle p {
     font-size: 0.56rem;
     line-height: 20px;
 }
+
+.header_line {
+    /* layout styling */
+    position: absolute;
+    bottom: -8%;
+    left: 50%;
+
+    /* size styling */
+    width: 1px;
+    height: 120px;
+
+    /* background styling */
+    background: rgba(51, 51, 51, 0.5);
+}
+
 
 
 /* MAIN STYLING */
