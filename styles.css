@@ -282,12 +282,10 @@ header .circle p {
 
 /* features styling */
 .features {
-    background: url("creative_assets/home_4.jpeg") no-repeat fixed;
+    background: url("creative_assets/home_4.jpeg") no-repeat;
     background-size: cover;
     background-position: 90%;
-    height: 90vh;
-    padding-top: 10%;
-    padding-left: 35%;
+    padding: 12% 0 15% 35%;
 }
 
 .features_items {
@@ -319,9 +317,75 @@ header .circle p {
 }
 
 .features_text {
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .features_text p {
     padding-top: 5px;
+    font-size: 0.65rem;
+}
+
+
+/* team styling */
+.team {
+    padding: 150px;
+    position: relative;
+}
+
+.team_line {
+    /* layout styling */
+    position: absolute;
+    top: 0%;
+    left: 50%;
+
+    /* size styling */
+    width: 1px;
+    height: 60px;
+
+    /* background styling */
+    background: rgba(51, 51, 51, 0.5);
+}
+
+.team h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.team_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.team_text {
+    flex: 1 1 50%;
+    min-width: 450px;
+    margin: 10px;
+    background: #F6F6F6;
+    padding: 55px 0px 20px 20px;
+}
+
+.team_text h3 {
+    margin-bottom: 15px;
+}
+
+.team_image {
+    flex: 1 1 21%;
+    min-width: 150px;
+    margin: 10px;
+}
+
+.team_image img {
+    width: 100%;
+    display: block;
+}
+
+.team_last_text {
+    text-align: center;
+    margin: auto;
+}
+
+.team_last_text h3 {
+    display: inline-block;
+    width: 65%;
 }
