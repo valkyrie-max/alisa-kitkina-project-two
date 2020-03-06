@@ -26,7 +26,8 @@ html {
 /* GENERAL STYLING */
 h1,
 h2,
-h3 {
+h3,
+h4 {
     /* font styling */
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color: #333;
@@ -57,7 +58,15 @@ h3 {
     font-weight: 400;
 }
 
-p {
+h4 {
+    font-size: 0.65rem;
+    letter-spacing: 1.8px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+p,
+address {
     /* font styling */
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     color: #333;
@@ -68,6 +77,10 @@ p {
     /* marg/pad styling */
     padding: 0;
     margin: 0;
+}
+
+address {
+    font-style: normal;
 }
 
 ul {
@@ -331,6 +344,7 @@ header .circle p {
 .team {
     position: relative;
     padding: 100px 80px;
+    margin-bottom: 50px;
 }
 
 .team_line {
@@ -391,4 +405,48 @@ header .circle p {
 .team_last_text h3 {
     text-align: center;
     width: 75%;
+}
+
+/* portfolio styling */
+.portfolio {
+    display: flex;
+}
+
+.portfolio .text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3DAB7;
+}
+
+.portfolio h2 {
+    margin-bottom: 40px;
+}
+
+.portfolio .text p {
+    width: 75%;
+    margin-bottom: 25px;
+}
+
+.portfolio a {
+    background-color: #F3F3F3;
+    padding: 15px 25px;
+    margin-top: 10px;
+}
+
+.portfolio a h3 {
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+.portfolio_img {
+    width: 50%;
+}
+
+.portfolio_img img {
+    width: 100%;
+    display: block;
 }
