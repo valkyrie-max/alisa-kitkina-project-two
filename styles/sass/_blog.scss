@@ -124,12 +124,14 @@
     margin: 60px 0;
         .profile {
             display: grid;
-            grid-template-columns: 40% 20% 20% 20%;
-            border-bottom: 1px solid lighten($primary_color, 70);
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            border-bottom: $underline_color;
             align-items: center;
         }
             .profile_name {
+                grid-column: 1 / span 2;
                 display: flex;
+                flex-wrap: wrap;
                 align-items: center;
             }
             a {
@@ -183,4 +185,24 @@
             li {
                 margin-right: 15px;
             }
+}
+
+.blog_page .related_posts {
+    margin-bottom: 50px;
+        h2 {
+            padding-bottom: 30px;
+            margin-bottom: 50px;
+            border-bottom: $underline_color;
+        }
+        .related_posts_content 
+            p {
+                font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+                margin-top: 10px;
+            }
+}
+
+.blog_page .related_posts_content {
+    display: flex;
+    justify-content: space-between;
 }
