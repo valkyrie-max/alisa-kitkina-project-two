@@ -1,0 +1,69 @@
+@mixin blog_h2 {
+    padding-bottom: 30px;
+    margin-bottom: 50px;
+    border-bottom: $underline_color;
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+}
+
+@mixin blog_logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+}
+
+@mixin form {
+    form {
+        display: flex;
+        flex-direction: column;
+            .top_form {
+                display: flex;
+                justify-content: space-between;
+                input[type="text"], 
+                input[type="email"] {
+                    border: none;
+                    font-family: $secondary_font;
+                    color: lighten($primary_color, 30);
+                    font-size: 0.7rem;
+                    padding: 10px 0;
+                    border-bottom: $underline_color;
+                    width: 31%;
+                }
+            }
+
+            .bottom_form {
+                display: flex;
+                flex-direction: column;
+                    textarea {
+                        border: none;
+                        font-family: $secondary_font; 
+                        color: lighten($primary_color, 30);
+                        font-size: 0.7rem;
+                        padding: 25px 0;
+                        border-bottom: $underline_color;
+                        width: 100%;
+                        resize: none;
+                    }
+                    button {
+                        border: none;
+                        background-color: white;
+                        margin-top: 50px;
+                        text-align: left;
+                        padding: 0;
+                            p {
+                                display: inline-block;
+                                color: lighten($primary_color, 30);
+                                font-family: $primary_font;
+                                font-size: 0.7rem;
+                                text-transform: uppercase;
+                                border-bottom: $underline_color;
+                                padding: 10px 0;
+                            }
+                    }
+            }
+    }
+}
