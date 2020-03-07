@@ -9,10 +9,10 @@
     <script src="https://kit.fontawesome.com/82d522d35e.js" crossorigin="anonymous"></script>
     
     <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
     
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css"> 
 </head>
 <body class="blog_page">
     
@@ -24,11 +24,10 @@
                     <div>
                         <ul class="left_nav_header">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="index.html">Home</a>
                             </li>
                             <li>
-                                <a href="blog.html"
-                                    target="_blank">Blog</a>
+                                <a href="blog.html">Blog</a>
                             </li>
                             <li>
                                 <a href="#portfolio">Portfolio</a>
@@ -42,8 +41,7 @@
                                 <a href="#">Shop</a>
                             </li>
                             <li>
-                                <a href="contact.html"
-                                    target="_blank">Contact</a>
+                                <a href="contact.html">Contact</a>
                             </li>
                             <li>
                                 <a href="">
@@ -52,7 +50,8 @@
                                 </a>
                             </li>
                             <li>
-                                <a class="circle"
+                                <!-- hiding this element from SRs as of now due to this project being a simple PDF conversion; it is assumed that JS will be run to ensure more accessability -->
+                                <a aria-hidden="true" class="circle"
                                     href="#">
                                     <div class="circle">
                                         <p>2</p>
@@ -72,5 +71,197 @@
     </header>
     <!-- HEADER ENDS -->
 
+    <!-- MAIN STARTS -->
+    <main>
+        <section class="blog_article">
+            <div class="wrapper">
+                <article>
+                    <h1>How to run a creative agency</h1>
+                    <nav class="article_nav">
+                        <li>
+                            <a href="index.html">Home</a> 
+                            <span aria-hidden="true">&#47;</span>
+                        </li>
+                        <li>
+                            <a href="blog.html">Blog</a>
+                            <span aria-hidden="true">&#47;</span>
+                        </li>
+                        <li>
+                            <a href="#">How to run a creative agency</a>
+                        </li>
+                    </nav>
+
+                    <div class="info_block">
+                        <div class="profile">
+                            <div class="profile_name">
+                                <div class="img">
+                                    <img src="creative_assets/blog_2.jpeg" alt="">
+                                </div>
+                                <div class="profile_description">
+                                    <h3>Alex</h3>
+                                    <p>Administrator</p>
+                                </div>
+                            </div>
+                            <div class="date">
+                                <h3>Date</h3>
+                                <p>July 31, 2018</p>
+                            </div>
+                            <div class="categories">
+                                <h3>Category</h3>
+                                <p>
+                                    <a href="#">Entertainment</a>, 
+                                    <a href="#">Business</a>
+                                </p>
+                            </div>
+                            <div class="tags">
+                                <h3>Category</h3>
+                                <p>
+                                    <a href="#">Design</a>,
+                                    <a href="#">Web</a>,
+                                    <a href="#">Lifestyle</a>,
+                                    <a href="#">Site</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="article_text">
+                            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, velit? Soluta, odio facilis modi sed magnam quidem aut suscipit dolorem voluptate quibusdam quisquam, cumque delectus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque nisi aliquid itaque mollitia nulla provident.</h4>
+
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur impedit voluptatem ex, architecto explicabo, quidem perferendis hic perspiciatis ut, vel accusamus natus dolor aut. Fugit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro est, atque nobis dolores mollitia necessitatibus?</p>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis soluta error maxime, doloremque commodi accusamus sint deserunt tempora voluptas voluptatibus nam pariatur recusandae reprehenderit consequatur excepturi impedit voluptatem eius accusantium dolor libero. Mollitia natus officiis ipsam aliquam recusandae eum neque explicabo quod aut. Suscipit natus ipsam corrupti quod cupiditate! Earum, cupiditate. Quia cumque maxime aut debitis at ex eos ad? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis maxime nisi voluptate nihil consequatur dolorem, quas ad facere obcaecati assumenda! Dolore fugit, ratione quaerat corrupti architecto veniam error inventore porro quam est recusandae aliquam accusamus quo incidunt. Fugiat, fugit amet!</p>
+
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt cumque amet enim consequuntur ab eum itaque laboriosam laudantium excepturi eveniet error, quisquam ipsam, blanditiis soluta quae nemo impedit maxime corrupti quibusdam iure ipsum aut vero  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque voluptatem dolorem nisi mollitia rerum obcaecati debitis commodi quibusdam quae eaque.</p>
+                        </div>
+
+                        <div class="author_links">
+                            <h4>Share:</h4>
+                            <ul class="author_social_media">
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-facebook-f"></i>
+                                        <div class="sr-only">Facebook</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-twitter"></i>
+                                        <div class="sr-only">Twitter</div>
+                                    </a>
+                                <li>
+                                    <a href="">
+                                        <i class="fab fa-instagram"></i>
+                                        <div class="sr-only">Instagram</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <!-- MAIN ENDS -->
+
+    <!-- FOOTER STARTS -->
+    <footer>
+    
+        <div class="wrapper">
+            <!-- upper_footer starts -->
+            <div class="upper_footer">
+                <!-- contact_info starts -->
+                <div class="contact_info">
+                    <div class="contact_info_text">
+                        <h4>Contact us</h4>
+                        <address>6591 Orchard Street, Toronto, Ontario</address>
+                        <p>Email: contact@creative.com</p>
+                        <p>Phone 01: 123 456 7890</p>
+                        <p>Phone 02: 0987 654 321</p>
+                        <p>Fax: 645 123 987</p>
+                    </div>
+    
+                    <ul class="social_media">
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                                <div class="sr-only">Facebook</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                                <div class="sr-only">Twitter</div>
+                            </a>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                                <div class="sr-only">Instagram</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- contact_info ends -->
+    
+                <!-- recent_posts start -->
+                <div class="recent_posts">
+                    <h4>Recent posts</h4>
+                    <ul class="recent_posts_links">
+                        <li>
+                            <a href="#">
+                                <p>Lorem, ipsum dolor.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- recent_posts ends -->
+    
+                <!-- subscribe starts -->
+                <div class="subscribe">
+                    <div class="subscribe_text">
+                        <h4>Subscribe now</h4>
+                        <p>Sign up for emails and notifications below. </p>
+                    </div>
+    
+                    <div class="subscribe_form">
+                        <form action="">
+                            <label class="sr-only"
+                                for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                            <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- subscribe ends -->
+            </div>
+            <!-- upper_footer ends -->
+        </div>
+    
+        <!-- lower_footer starts -->
+        <div class="lower_footer">
+            <h2>Creative agency</h2>
+        </div>
+        <!-- lower_footer ends -->
+    </footer>
+    <!-- FOOTER ENDS -->
 </body>
 </html>
