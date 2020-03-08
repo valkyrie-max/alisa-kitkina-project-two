@@ -2,10 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-</head>
-<body>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>CREATIVE - CONTACT US</title>
     
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/82d522d35e.js" crossorigin="anonymous"></script>
+    
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans&display=swap" rel="stylesheet">
+    
+    <!-- STYLESHEET -->
+    <link rel="stylesheet"
+        href="styles/styles.css">
+</head>
+<body class="contact_page">
+    
+    <!-- HEADER STARTS -->
+    <header>
+        <div class="wrapper">
+            <div class="nav_items">
+                <nav>
+                    <div>
+                        <ul class="left_nav_header">
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#portfolio">Portfolio</a>
+                                <!-- link this to the portfolio section -->
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="right_nav_header">
+                            <li>
+                                <a href="#">Shop</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="fas fa-search"></i>
+                                    <div class="sr-only">Website search</div>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- hiding this element from SRs as of now due to this project being a simple PDF conversion; it is assumed that JS will be run to ensure more accessability -->
+                                <a aria-hidden="true"
+                                    class="circle"
+                                    href="#">
+                                    <div class="circle">
+                                        <p>2</p>
+                                    </div>
+                                    <i class="fas fa-shopping-bag"></i>
+                                    <div class="sr-only">Check your shopping cart</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="logo">
+                    <h2>Creative</h2>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN STARTS -->
+    <main>
+        <div class="wrapper">
+            <section class="contact_us">
+                <span></span>
+                <h1>Contact Us</h1>
+                <div class="contact_details">
+                    <div class="top_details">
+                        <h3>Contact Details</h3>
+                        <p>If you need any help, please contact us or send us an email or go to our forum.</p>
+                        <p>We are sure that you can receive our reply as soon as possible.</p>
+                    </div>
+
+                    <div class="middle_details">
+                        <ul>
+                            <li>
+                                <i class="fas fa-mobile-alt"></i>
+                                <h4>Phone</h4>
+                                <p>Phone 01: 123 456 7890</p>
+                                <p>Phone 02: 0987 654 321</p>
+                            </li>
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <h4>Address</h4>
+                                <address>6591 Orchard Street, Toronto, Ontario</address>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope"></i>
+                                <h4>Email</h4>
+                                <p>contact@creative.com</p>
+                                <p>info@creative.com</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom_details">
+                        <h3>Get in touch with us</h3>
+                        <p>If you have any questions, please don't hesitate to send us a message</p>
+                    </div>
+                </div>
+            </section>
+
+            <form action="">
+                <div class="top_form">
+                    <label class="sr-only"
+                        for="name">Enter your name</label>
+                    <input type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name...">
+            
+                    <label class="sr-only"
+                        for="email">Email</label>
+                    <input type="email"
+                        id="email"
+                        name="email"
+                        placeholder="youremail@domain.com"
+                        required>
+            
+                    <label class="sr-only"
+                        for="subject">Subject (Optional)</label>
+                    <input type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subject(Optional)">
+                </div>
+            
+                <div class="bottom_form">
+                    <label class="sr-only"
+                        for="comment">Comment field</label>
+                    <textarea id="comment"
+                        rows="12"
+                        cols="100"
+                        placeholder="Here goes your comment"></textarea>
+                    <button type="submit">
+                        <p>Submit comment</p>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- MAIN ENDS -->
+
 </body>
 </html>

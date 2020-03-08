@@ -1,0 +1,154 @@
+.contact_page header {
+    position: relative;
+    height: 20vh;
+    padding: 40px 0;
+}
+
+.contact_page header .nav_items {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact_page header .logo {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact_page header nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact_page header nav ul {
+    display: flex;
+}
+
+.contact_page header nav ul li {
+    display: flex;
+}
+
+.contact_page header .left_nav_header li {
+    padding-right: 30px;
+}
+
+.contact_page header .right_nav_header li {
+    padding-left: 30px;
+}
+
+.contact_page header {
+    h2 {
+        @include blog_logo;
+    }
+}
+
+.contact_page header ul .circle {
+    position: relative;
+}
+
+.contact_page header .circle {
+    position: relative;
+}
+
+.contact_page header .circle div {
+    /* text styling */
+    text-align: center;
+    font-weight: 700;
+
+    /* size styling */
+    height: 15px;
+    width: 15px;
+    background-color: $secondary;
+
+    /* position styling */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    /* other styles */
+    border-radius: 100%;
+}
+
+.contact_page header .circle p {
+    font-size: 0.42rem;
+    line-height: 15px;
+}
+
+.contact_page {
+    h1 {
+        font-size: 2.7rem;
+    }
+}
+
+.contact_page main {
+    background-image: url("../creative_assets/contact_1.jpeg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-x: 90%;
+        span {
+            display: inline-block;
+            width: 50px;
+            height: 4px;
+            background-color: $primary_color;
+            margin: -70px 0;
+        }
+}
+
+
+.contact_page .contact_us {
+    margin: -50px 0;
+        h1 {
+            padding: 80px 0;
+            width: 25%;
+        }
+        h3 {
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        p, address {
+            color: lighten($primary_color, 30);
+        }
+}
+
+.contact_page .middle_details ul {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    justify-content: space-between;
+    margin: 50px 0px 50px 50px;
+        li {
+            border-right: $underline_color;
+            padding: 40px 0 40px 5px;
+        }
+
+        li:nth-child(3) {
+            border: none;
+        }
+
+        i {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+
+        h4 {
+            letter-spacing: 5px;
+            font-weight: 700;
+            font-size: 0.65rem;
+            margin: 0 0 5px 0;
+        }
+
+        p,
+        address {
+            font-size: 0.65rem;
+        }
+}
+
+.contact_page main form {
+    @include form
+}
