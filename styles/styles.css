@@ -391,8 +391,52 @@ span {
   padding-right: 30px;
 }
 
+.left_nav_header .hover a {
+  position: relative;
+  text-align: center;
+}
+
+.left_nav_header .hover a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.left_nav_header .hover a:hover::after {
+  width: 140%;
+}
+
 .index_page header .right_nav_header li {
   padding-left: 30px;
+}
+
+.right_nav_header .hover a {
+  position: relative;
+  text-align: center;
+}
+
+.right_nav_header .hover a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.right_nav_header .hover a:hover::after {
+  width: 140%;
 }
 
 .index_page header ul .circle {
@@ -529,6 +573,12 @@ span {
   font-size: 1.5rem;
   color: #333333;
   cursor: pointer;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+.testimonials_gallery i:hover {
+  color: #e6e6e6;
 }
 
 .fa-chevron-left {
@@ -713,6 +763,16 @@ span {
   background-color: #f6f6f6;
   padding: 15px 25px;
   margin-top: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.portfolio a:hover {
+  background-color: #333333;
+}
+
+.portfolio a:hover h3 {
+  color: #c3dab7;
 }
 
 .portfolio a h3 {
@@ -787,8 +847,52 @@ span {
   padding-right: 30px;
 }
 
+.left_nav_header li a {
+  position: relative;
+  text-align: center;
+}
+
+.left_nav_header li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.left_nav_header li a:hover::after {
+  width: 140%;
+}
+
 .blog_page header .right_nav_header li {
   padding-left: 30px;
+}
+
+.right_nav_header li a {
+  position: relative;
+  text-align: center;
+}
+
+.right_nav_header li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.right_nav_header li a:hover::after {
+  width: 140%;
 }
 
 .blog_page header h2 {
@@ -1112,6 +1216,10 @@ a {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   width: 31%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .blog_page .leave_comments form .bottom_form {
@@ -1133,6 +1241,8 @@ a {
   border-bottom: 1px solid #e6e6e6;
   width: 100%;
   resize: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .blog_page .leave_comments form .bottom_form button {
@@ -1141,6 +1251,7 @@ a {
   margin-top: 50px;
   text-align: left;
   padding: 0;
+  cursor: pointer;
 }
 
 .blog_page .leave_comments form .bottom_form button p {
@@ -1151,6 +1262,16 @@ a {
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
   padding: 10px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.blog_page .leave_comments input[type=text]:focus:focus-within,
+.blog_page .leave_comments input[type=email]:focus:focus-within,
+.blog_page .leave_comments textarea:focus:focus-within,
+.blog_page .leave_comments button[type="submit"] p:hover {
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .blog_page .leave_comments h2 {
@@ -1214,8 +1335,52 @@ a {
   padding-right: 30px;
 }
 
+.left_nav_header li a {
+  position: relative;
+  text-align: center;
+}
+
+.left_nav_header li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.left_nav_header li a:hover::after {
+  width: 140%;
+}
+
 .contact_page header .right_nav_header li {
   padding-left: 30px;
+}
+
+.right_nav_header li a {
+  position: relative;
+  text-align: center;
+}
+
+.right_nav_header li a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: #333333;
+  bottom: 50%;
+  right: -20%;
+  -webkit-transition: width 0.6s;
+  transition: width 0.6s;
+}
+
+.right_nav_header li a:hover::after {
+  width: 140%;
 }
 
 .contact_page header h2 {
@@ -1363,6 +1528,10 @@ a {
   padding: 10px 0;
   border-bottom: 1px solid #e6e6e6;
   width: 31%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .contact_page .message_form form .bottom_form {
@@ -1384,6 +1553,8 @@ a {
   border-bottom: 1px solid #e6e6e6;
   width: 100%;
   resize: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .contact_page .message_form form .bottom_form button {
@@ -1392,6 +1563,7 @@ a {
   margin-top: 50px;
   text-align: left;
   padding: 0;
+  cursor: pointer;
 }
 
 .contact_page .message_form form .bottom_form button p {
@@ -1402,6 +1574,16 @@ a {
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
   padding: 10px 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.contact_page .message_form input[type=text]:focus:focus-within,
+.contact_page .message_form input[type=email]:focus:focus-within,
+.contact_page .message_form textarea:focus:focus-within,
+.contact_page .message_form button[type="submit"] p:hover {
+  color: #333333;
+  border-bottom: 1px solid #333333;
 }
 
 .contact_page .message_form p {

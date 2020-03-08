@@ -44,10 +44,17 @@
     padding-right: 30px;
 }
 
+.left_nav_header .hover {
+    @include nav_hover;
+}
+
 .index_page header .right_nav_header li {
     padding-left: 30px;
 }
 
+.right_nav_header .hover {
+    @include nav_hover;
+}
 
 .index_page header ul .circle {
     position: relative;
@@ -176,6 +183,11 @@
     font-size: 1.5rem;
     color: $primary_color;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.testimonials_gallery i:hover {
+    color: lighten($primary_color, 70);
 }
 
 .fa-chevron-left {
@@ -313,6 +325,8 @@
     display: flex;
 }
 
+
+
 .portfolio .text {
     width: 50%;
     text-align: center;
@@ -322,6 +336,7 @@
     align-items: center;
     background-color: $secondary;
 }
+
 
 .portfolio h2 {
     margin-bottom: 40px;
@@ -336,6 +351,14 @@
     background-color: $tertiary;
     padding: 15px 25px;
     margin-top: 10px;
+    transition: all 0.5s;
+}
+
+.portfolio a:hover {
+    background-color: $primary_color; 
+        h3 {
+            color: $secondary;
+        }
 }
 
 .portfolio a h3 {

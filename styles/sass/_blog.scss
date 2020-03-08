@@ -45,8 +45,16 @@
     padding-right: 30px;
 }
 
+.left_nav_header li {
+    @include nav_hover;
+}
+
 .blog_page header .right_nav_header li {
     padding-left: 30px;
+}
+
+.right_nav_header li {
+    @include nav_hover;
 }
 
 .blog_page header {
@@ -280,6 +288,7 @@
 
 .blog_page .leave_comments {
     @include form;
+    @include form_focus;
     margin-bottom: 180px;
     h2 {
         @include blog_h2;

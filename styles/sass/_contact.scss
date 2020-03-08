@@ -37,8 +37,16 @@
     padding-right: 30px;
 }
 
+.left_nav_header li {
+    @include nav_hover;
+}
+
 .contact_page header .right_nav_header li {
     padding-left: 30px;
+}
+
+.right_nav_header li {
+    @include nav_hover;
 }
 
 .contact_page header {
@@ -151,6 +159,7 @@
 
 .contact_page .message_form {
     @include form;
+    @include form_focus;
     margin: 120px 0 100px 0;
     p {
         letter-spacing: 3px;

@@ -32,6 +32,8 @@
                     padding: 10px 0;
                     border-bottom: $underline_color;
                     width: 31%;
+                    transition: all 0.5s;
+                    animation-fill-mode: forwards;  
                 }
             }
 
@@ -47,6 +49,7 @@
                         border-bottom: $underline_color;
                         width: 100%;
                         resize: none;
+                        transition: all 0.5s;
                     }
                     button {
                         border: none;
@@ -54,6 +57,7 @@
                         margin-top: 50px;
                         text-align: left;
                         padding: 0;
+                        cursor: pointer;
                             p {
                                 display: inline-block;
                                 color: lighten($primary_color, 30);
@@ -62,8 +66,41 @@
                                 text-transform: uppercase;
                                 border-bottom: $underline_color;
                                 padding: 10px 0;
+                                transition: all 0.5s;
                             }
                     }
             }
+    }
+}
+
+@mixin form_focus {
+    input[type=text]:focus:focus-within,
+    input[type=email]:focus:focus-within,
+    textarea:focus:focus-within,
+    button[type="submit"] p:hover  {
+        color: $primary_color;
+        border-bottom: 1px solid $primary_color;
+    }
+}
+
+@mixin nav_hover {
+    a {
+            position: relative;
+            text-align: center;
+            &::after{
+                position: absolute;
+                content: "";
+                display: block;
+                width: 0%;
+                height: 1px;
+                background-color: $primary_color;
+                bottom: 50%;
+                right: -20%;
+                transition: width 0.6s;
+            }
+        }
+
+    a:hover::after {
+        width: 140%;
     }
 }
