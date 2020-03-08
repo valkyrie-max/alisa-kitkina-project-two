@@ -116,46 +116,139 @@
                 </div>
             </section>
 
-            <form action="">
-                <div class="top_form">
-                    <label class="sr-only"
-                        for="name">Enter your name</label>
-                    <input type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Enter your name...">
-            
-                    <label class="sr-only"
-                        for="email">Email</label>
-                    <input type="email"
-                        id="email"
-                        name="email"
-                        placeholder="youremail@domain.com"
-                        required>
-            
-                    <label class="sr-only"
-                        for="subject">Subject (Optional)</label>
-                    <input type="text"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject(Optional)">
-                </div>
-            
-                <div class="bottom_form">
-                    <label class="sr-only"
-                        for="comment">Comment field</label>
-                    <textarea id="comment"
-                        rows="12"
-                        cols="100"
-                        placeholder="Here goes your comment"></textarea>
-                    <button type="submit">
-                        <p>Submit comment</p>
-                    </button>
-                </div>
-            </form>
+            <section class="message_form">
+                <form action="">
+                    <div class="top_form">
+                        <label class="sr-only"
+                            for="name">Enter your name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name...">
+                
+                        <label class="sr-only" for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@domain.com" required>
+                
+                        <label class="sr-only" for="subject">Subject (Optional)</label>
+                        <input type="text" id="subject" name="subject" placeholder="Subject (Optional)">
+                    </div>
+                
+                    <div class="bottom_form">
+                        <label class="sr-only" for="comment">Comment field</label>
+                        <textarea id="comment" rows="12" cols="100" placeholder="Here goes your comment"></textarea>
+                        <button type="submit">
+                            <p>Send message</p>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <div class="contact_img">
+            <img src="creative_assets/contact_2.jpeg" alt="">
         </div>
     </main>
     <!-- MAIN ENDS -->
 
+    <!-- FOOTER STARTS -->
+    <footer> 
+        <div class="wrapper">
+            <!-- upper_footer starts -->
+            <div class="upper_footer">
+                <!-- contact_info starts -->
+                <div class="contact_info">
+                    <div class="contact_info_text">
+                        <h4>Contact us</h4>
+                        <address>6591 Orchard Street, Toronto, Ontario</address>
+                        <p>Email: contact@creative.com</p>
+                        <p>Phone 01: 123 456 7890</p>
+                        <p>Phone 02: 0987 654 321</p>
+                        <p>Fax: 645 123 987</p>
+                    </div>
+    
+                    <ul class="social_media">
+                        <li>
+                            <a href="">
+                                <i class="fab fa-facebook-f"></i>
+                                <div class="sr-only">Facebook</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-twitter"></i>
+                                <div class="sr-only">Twitter</div>
+                            </a>
+                        <li>
+                            <a href="">
+                                <i class="fab fa-instagram"></i>
+                                <div class="sr-only">Instagram</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- contact_info ends -->
+    
+                <!-- recent_posts start -->
+                <div class="recent_posts">
+                    <h4>Recent posts</h4>
+                    <ul class="recent_posts_links">
+                        <li>
+                            <a href="#">
+                                <p>Lorem, ipsum dolor.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- recent_posts ends -->
+    
+                <!-- subscribe starts -->
+                <div class="subscribe">
+                    <div class="subscribe_text">
+                        <h4>Subscribe now</h4>
+                        <p>Sign up for emails and notifications below. </p>
+                    </div>
+    
+                    <div class="subscribe_form">
+                        <form action="">
+                            <label class="sr-only"
+                                for="email">Email</label>
+                            <input type="email"
+                                id="email"
+                                name="email"
+                                placeholder="Enter your email"
+                                required>
+                            <button type="submit"><i class="fas fa-long-arrow-alt-right"></i></button>
+                        </form>
+                    </div>
+                </div>
+                <!-- subscribe ends -->
+            </div>
+            <!-- upper_footer ends -->
+        </div>
+    
+        <!-- lower_footer starts -->
+        <div class="lower_footer">
+            <h2>Creative agency</h2>
+        </div>
+        <!-- lower_footer ends -->
+    </footer>
+    <!-- FOOTER ENDS -->
 </body>
 </html>

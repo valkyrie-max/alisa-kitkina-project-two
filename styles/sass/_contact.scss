@@ -119,12 +119,12 @@
 
 .contact_page .middle_details ul {
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-content: space-between;
     margin: 50px 0px 50px 50px;
         li {
             border-right: $underline_color;
-            padding: 40px 0 40px 5px;
+            padding: 40px 0 40px 45px;
         }
 
         li:nth-child(3) {
@@ -149,6 +149,18 @@
         }
 }
 
-.contact_page main form {
-    @include form
+.contact_page .message_form {
+    @include form;
+    margin: 120px 0 100px 0;
+    p {
+        letter-spacing: 3px;
+    }
+}
+
+.contact_page .contact_img {
+    width: 100%;
+        img {
+            display: block;
+            width: 100%;
+        }
 }

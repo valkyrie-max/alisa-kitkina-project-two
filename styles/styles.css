@@ -1297,8 +1297,8 @@ a {
 .contact_page .middle_details ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 30% 30%;
-      grid-template-columns: 30% 30% 30%;
+  -ms-grid-columns: (minmax(300px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -1307,7 +1307,7 @@ a {
 
 .contact_page .middle_details ul li {
   border-right: 1px solid #e6e6e6;
-  padding: 40px 0 40px 5px;
+  padding: 40px 0 40px 45px;
 }
 
 .contact_page .middle_details ul li:nth-child(3) {
@@ -1331,7 +1331,11 @@ a {
   font-size: 0.65rem;
 }
 
-.contact_page main form form {
+.contact_page .message_form {
+  margin: 120px 0 100px 0;
+}
+
+.contact_page .message_form form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1341,7 +1345,7 @@ a {
           flex-direction: column;
 }
 
-.contact_page main form form .top_form {
+.contact_page .message_form form .top_form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1350,8 +1354,8 @@ a {
           justify-content: space-between;
 }
 
-.contact_page main form form .top_form input[type="text"],
-.contact_page main form form .top_form input[type="email"] {
+.contact_page .message_form form .top_form input[type="text"],
+.contact_page .message_form form .top_form input[type="email"] {
   border: none;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: gray;
@@ -1361,7 +1365,7 @@ a {
   width: 31%;
 }
 
-.contact_page main form form .bottom_form {
+.contact_page .message_form form .bottom_form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1371,7 +1375,7 @@ a {
           flex-direction: column;
 }
 
-.contact_page main form form .bottom_form textarea {
+.contact_page .message_form form .bottom_form textarea {
   border: none;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   color: gray;
@@ -1382,7 +1386,7 @@ a {
   resize: none;
 }
 
-.contact_page main form form .bottom_form button {
+.contact_page .message_form form .bottom_form button {
   border: none;
   background-color: white;
   margin-top: 50px;
@@ -1390,7 +1394,7 @@ a {
   padding: 0;
 }
 
-.contact_page main form form .bottom_form button p {
+.contact_page .message_form form .bottom_form button p {
   display: inline-block;
   color: gray;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
@@ -1398,6 +1402,19 @@ a {
   text-transform: uppercase;
   border-bottom: 1px solid #e6e6e6;
   padding: 10px 0;
+}
+
+.contact_page .message_form p {
+  letter-spacing: 3px;
+}
+
+.contact_page .contact_img {
+  width: 100%;
+}
+
+.contact_page .contact_img img {
+  display: block;
+  width: 100%;
 }
 
 footer {
