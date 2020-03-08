@@ -31,6 +31,9 @@ footer .upper_footer {
 
 .contact_info .social_media {
     display: flex;
+        li a i {
+            color: $tertiary;
+        }
 }
 
 .contact_info li {

@@ -333,6 +333,14 @@ span {
   display: inline-block;
 }
 
+.nav_items label[for="toggle"] {
+  display: none;
+}
+
+.nav_items #toggle {
+  display: none;
+}
+
 .index_page header {
   /* background styling */
   background: url("../creative_assets/home_1.jpeg") no-repeat fixed;
@@ -1648,6 +1656,10 @@ footer .upper_footer {
   display: flex;
 }
 
+.contact_info .social_media li a i {
+  color: #f6f6f6;
+}
+
 .contact_info li {
   margin: 15px 20px 0 0;
 }
@@ -1723,4 +1735,349 @@ footer button i {
   font-size: 1rem;
   padding: 15px 15px;
   color: #333333;
+}
+
+@media (min-width: 1493px) {
+  .team_items {
+    -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 1212px) {
+  .services_imgs .table {
+    width: 50%;
+  }
+  .team_items {
+    -ms-grid-columns: (minmax(270px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  }
+  .team_items .team_text {
+    padding-bottom: 25px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .index_page header {
+    background-position: 50% 100%;
+  }
+  .features {
+    padding: 5% 0 5% 35%;
+  }
+}
+
+@media (max-width: 955px) {
+  .index_page h2 {
+    font-size: 1.2rem;
+  }
+  .index_page h3 {
+    font-size: 0.9rem;
+  }
+  .index_page p {
+    font-size: 0.75rem;
+  }
+  .index_page .services {
+    padding: 120px 0;
+  }
+  .index_page .services .services_imgs .table {
+    width: 70%;
+  }
+  .index_page .circle_text {
+    display: none;
+  }
+  .features {
+    background-position: 50%;
+  }
+  .features .features_items {
+    padding-top: 0;
+    display: block;
+    background-position: 50%;
+  }
+  footer .upper_footer {
+    display: block;
+  }
+  footer .upper_footer .contact_info {
+    float: left;
+  }
+  footer .upper_footer .contact_info h4 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+  }
+  footer .upper_footer .contact_info p,
+  footer .upper_footer .contact_info address {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
+  footer .upper_footer .contact_info .social_media i {
+    font-size: 1.5rem;
+  }
+  footer .upper_footer .recent_posts {
+    float: right;
+  }
+  footer .upper_footer .recent_posts h4 {
+    font-size: 1.5rem;
+    margin: 0 0 20px 0;
+    text-align: left;
+  }
+  footer .upper_footer .recent_posts p,
+  footer .upper_footer .recent_posts address {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
+  footer .upper_footer .subscribe {
+    clear: both;
+    padding-top: 20px;
+  }
+  footer .upper_footer .subscribe .subscribe_text {
+    text-align: center;
+  }
+  footer .upper_footer .subscribe .subscribe_text h4 {
+    font-size: 1.5rem;
+    margin: 0px 0 20px 0;
+    text-align: center;
+  }
+  footer .upper_footer .subscribe .subscribe_text p {
+    font-size: 0.7rem;
+    line-height: 30px;
+  }
+  footer .upper_footer .subscribe .subscribe_form form {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 875px) {
+  nav {
+    margin-top: 60px;
+    font-size: 2rem;
+  }
+  nav .left_nav_header a,
+  nav .right_nav_header a {
+    font-size: 0.8rem;
+  }
+  .index_page header .logo,
+  .blog_page header .logo,
+  .contact_page header .logo {
+    top: 15%;
+  }
+  .team_items {
+    -ms-grid-columns: (minmax(180px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+  .contact_page main {
+    background: none;
+  }
+}
+
+@media (max-width: 815px) {
+  .contact_page .middle_details ul li {
+    border: none;
+  }
+}
+
+@media (max-width: 765px) {
+  .portfolio .text {
+    width: 100%;
+    padding: 50px 0;
+  }
+  .portfolio_img {
+    display: none;
+  }
+}
+
+@media (max-width: 697px) {
+  .index_page header nav,
+  .blog_page header nav,
+  .contact_info header nav {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .index_page header .left_nav_header li,
+  .index_page header .right_nav_header li,
+  .blog_page header .left_nav_header li,
+  .blog_page header .right_nav_header li,
+  .contact_page header .left_nav_header li,
+  .contact_page header .right_nav_header li {
+    padding: 10px;
+  }
+  .services_text {
+    margin: 0;
+  }
+  .features {
+    padding: 50px 0;
+    background-position: 65%;
+  }
+  footer .upper_footer .contact_info {
+    float: none;
+    text-align: center;
+    display: block;
+  }
+  footer .upper_footer .contact_info .social_media {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 0 auto;
+    width: 45%;
+  }
+  footer .upper_footer .contact_info h4 {
+    font-size: 1rem;
+  }
+  footer .upper_footer .contact_info p,
+  footer .upper_footer .contact_info address {
+    font-size: 0.65rem;
+  }
+  footer .upper_footer .recent_posts {
+    float: none;
+    text-align: center;
+    margin-top: 50px;
+  }
+  footer .upper_footer .recent_posts h4 {
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    text-align: center;
+  }
+  footer .upper_footer .recent_posts p,
+  footer .upper_footer .recent_posts address {
+    font-size: 0.65rem;
+    line-height: 30px;
+  }
+  footer .upper_footer .subscribe {
+    margin-top: 50px;
+  }
+  footer .upper_footer .subscribe .subscribe_text {
+    text-align: center;
+  }
+  footer .upper_footer .subscribe .subscribe_text h4 {
+    font-size: 1rem;
+  }
+  footer .upper_footer .subscribe .subscribe_text p {
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 625px) {
+  .testimonials img {
+    width: 30%;
+  }
+  .features {
+    padding: 50px 0;
+    background-position: 65%;
+  }
+  .team_items {
+    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  .blog_page header {
+    background-position: unset;
+  }
+}
+
+@media (max-width: 540px) {
+  nav {
+    margin: 0;
+  }
+  .index_page h2 {
+    font-size: 0.9rem;
+  }
+  .index_page h3 {
+    font-size: 0.75rem;
+  }
+  .index_page p {
+    font-size: 0.6rem;
+  }
+  .index_page header .logo,
+  .blog_page header .logo,
+  .contact_page header .logo {
+    top: 20%;
+  }
+  .index_page header nav ul,
+  .blog_page header nav ul,
+  .contact_page header nav ul {
+    display: none;
+  }
+  .index_page .nav_items label[for="toggle"],
+  .blog_page .nav_items label[for="toggle"],
+  .contact_page .nav_items label[for="toggle"] {
+    display: block;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  .team {
+    padding: 50px 100px;
+  }
+  .team_items {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .blog_page header nav {
+    margin: 0;
+    width: 10%;
+  }
+  .blog_page .leave_comments h2,
+  .blog_page .related_posts h2 {
+    line-height: 50px;
+  }
+  .contact_page .middle_details ul {
+    margin: 50px 0;
+  }
+  .contact_page .middle_details ul li {
+    padding: 0;
+    margin-bottom: 25px;
+  }
+  .contact_page .middle_details ul li i {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 450px) {
+  .team {
+    padding: 0;
+    margin-top: 50px;
+  }
+  .team_line {
+    display: none;
+  }
+  .team_text {
+    -ms-grid-column: 1;
+    grid-column: 1 / 1;
+    padding: 0 25px;
+    text-align: center;
+  }
+  .team_last_text {
+    display: none;
+  }
+  .team_image {
+    display: none;
+  }
+}
+
+@media (max-width: 325px) {
+  .index_page .services .services_imgs .table {
+    display: none;
+  }
+  .index_page .services .services_text {
+    padding: 0;
+  }
+  .index_page .services .services_text .branding,
+  .index_page .services .services_text .design_and_develop {
+    min-width: 200px;
+  }
+  .index_page .services p {
+    padding: 0;
+  }
+  .testimonials_gallery img {
+    display: none;
+  }
+  .blog_page .article_nav {
+    font-size: 0.45rem;
+  }
+  .blog_page .info_block .profile {
+    -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+  .contact_page .middle_details ul {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
 }

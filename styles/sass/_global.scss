@@ -97,3 +97,11 @@ i {
 span {
     display: inline-block;
 }
+
+.nav_items label[for="toggle"] {
+    display: none;
+}
+
+.nav_items #toggle {
+    display: none;
+}
